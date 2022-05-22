@@ -1,4 +1,4 @@
-# Activate x Wormhole Hackathon in Miami
+# Activate x Wormhole
 
 
 
