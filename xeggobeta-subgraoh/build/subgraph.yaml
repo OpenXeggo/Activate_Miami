@@ -1,0 +1,30 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Xeggo
+    network: celo
+    source:
+      address: "0xD7A4Db11DAF3F3E0Bdd5767d86DA0c835de621CF"
+      abi: Xeggo
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - CancelStream
+        - CreateStream
+        - WithdrawFromStream
+      abis:
+        - name: Xeggo
+          file: Xeggo\abis\Xeggo.json
+      eventHandlers:
+        - event: CancelStream(indexed uint256,indexed address,indexed address,uint256,uint256)
+          handler: handleCancelStream
+        - event: CreateStream(indexed uint256,indexed address,indexed
+            address,uint256,address,uint256,uint256)
+          handler: handleCreateStream
+        - event: WithdrawFromStream(indexed uint256,indexed address,uint256)
+          handler: handleWithdrawFromStream
+      file: Xeggo\Xeggo.wasm

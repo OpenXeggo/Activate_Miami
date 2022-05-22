@@ -1,0 +1,26 @@
+type CancelStream @entity {
+  id: ID!
+  streamId: BigInt! # uint256
+  sender: Bytes! # address
+  recipient: Bytes! # address
+  senderBalance: BigInt! # uint256
+  recipientBalance: BigInt! # uint256
+}
+
+type CreateStream @entity {
+  id: ID!
+  streamId: BigInt! # uint256
+  sender: Bytes! # address
+  recipient: Bytes! # address
+  deposit: BigInt! # uint256
+  tokenAddress: Bytes! # address
+  startTime: BigInt! # uint256
+  stopTime: BigInt! # uint256
+}
+
+type WithdrawFromStream @entity {
+  id: ID!
+  streamId: BigInt! # uint256
+  recipient: Bytes! # address
+  amount: BigInt! # uint256
+}
