@@ -10,6 +10,6 @@ Mainnet contract link: https://explorer.celo.org/address/0xD7A4Db11DAF3F3E0Bdd57
 
 Testnet contract link: https://alfajores-blockscout.celo-testnet.org/address/0x650bD589D0bE5a02957e8cce7352F44f20907174/transactions
 
-Subgraph Link:
+Subgraph Link:  https://thegraph.com/hosted-service/subgraph/aman-webdev/xeggobeta
 
 Telegram Link: https://t.co/3wkUUi6PdI?amp=1
